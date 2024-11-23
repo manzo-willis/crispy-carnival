@@ -1,14 +1,17 @@
 {
-  "name": "@manzo-willis/assets-init",
+  "name": "@manzo-willis/create-config",
   "version": "1.1.0",
   "description": "CLI tool to setup frontend assets pipeline",
   "bin": {
-    "assets-init": "./bin/cli.js"
+    "create-config": "./bin/cli.js"
   },
   "type": "module",
   "scripts": {
     "test": "npx jest",
     "lint": "npx eslint"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -26,7 +29,9 @@
   "files": [
     "bin",
     "src",
-    "templates"
+    "templates",
+    "LICENSE",
+    "README.md"
   ],
   "author": "Manzo Willis",
   "license": "MIT",
@@ -48,5 +53,8 @@
     "execa": "^9.5.1",
     "fs-extra": "^11.2.0",
     "ora": "^8.1.1"
+  },
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
   }
 }
