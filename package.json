@@ -23,6 +23,11 @@
     "babel",
     "eslint"
   ],
+  "files": [
+    "bin",
+    "src",
+    "templates"
+  ],
   "author": "Manzo Willis",
   "license": "MIT",
   "bugs": {
