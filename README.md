@@ -1,2 +1,3 @@
 # crispy-carnival
-CLI tool to setup frontend assets pipeline
+
+CLI tool to set up frontend assets pipeline

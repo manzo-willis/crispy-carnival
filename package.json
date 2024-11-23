@@ -1,0 +1,39 @@
+{
+  "name": "@crispy-carnival/config",
+  "version": "1.0.0",
+  "description": "CLI tool to setup frontend assets pipeline",
+  "bin": {
+    "config": "./bin/cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint": "npx eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manzo-willis/crispy-carnival/"
+  },
+  "keywords": [
+    "cli",
+    "frontend",
+    "tooling",
+    "sass",
+    "rollup",
+    "babel",
+    "eslint"
+  ],
+  "author": "Manzo Willis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manzo-willis/crispy-carnival/issues"
+  },
+  "homepage": "https://github.com/manzo-willis/crispy-carnival#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@stylistic/eslint-plugin-js": "^2.11.0",
+    "eslint": "^9.15.0",
+    "eslint-plugin-unicorn": "^56.0.1",
+    "globals": "^15.12.0"
+  }
+}
