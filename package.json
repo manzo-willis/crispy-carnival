@@ -1,5 +1,5 @@
 {
-  "name": "crispy-carnival-config",
+  "name": "crispy-carnival",
   "version": "1.0.0",
   "description": "CLI tool to setup frontend assets pipeline",
   "bin": {
