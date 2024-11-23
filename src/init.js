@@ -1,1 +1,1 @@
- console.log("erwerwerw")
+console.log('erwerwerw');
