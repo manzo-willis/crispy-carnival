@@ -1,9 +1,9 @@
 {
-  "name": "crispy-carnival",
+  "name": "@manzo-willis/assets-init",
   "version": "1.0.0",
   "description": "CLI tool to setup frontend assets pipeline",
   "bin": {
-    "config": "./bin/cli.js"
+    "assets-init": "./bin/cli.js"
   },
   "type": "module",
   "scripts": {
