@@ -2,6 +2,8 @@
 
 [![Node.js CI](https://github.com/manzo-willis/crispy-carnival/actions/workflows/node.js.yml/badge.svg)](https://github.com/manzo-willis/crispy-carnival/actions/workflows/node.js.yml)
 
+[![Release Drafter](https://github.com/manzo-willis/crispy-carnival/actions/workflows/release-drafter.yml/badge.svg)](https://github.com/manzo-willis/crispy-carnival/actions/workflows/release-drafter.yml)
+
 # crispy-carnival
 
 CLI tool to set up frontend assets pipeline
