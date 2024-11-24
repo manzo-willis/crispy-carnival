@@ -1,5 +1,7 @@
+@use 'variables';
+
 body {
   font-family: sans-serif;
   line-height: 1.6;
-  color: $primary-color;
+  color: variables.$primary-color;
 }
