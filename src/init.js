@@ -102,9 +102,11 @@ async function setupFeature(feature, projectConfig) {
 		case 'eslint':
 			projectConfig.scripts.lint = 'eslint src';
 			projectConfig.scripts['lint:fix'] = 'eslint src --fix';
-			projectConfig.devDependencies.eslint = '^8.56.0';
-			projectConfig.devDependencies['eslint-config-airbnb-base'] = '^15.0.0';
-			projectConfig.devDependencies['eslint-plugin-import'] = '^2.29.1';
+			projectConfig.devDependencies['@eslint/js'] = '^9.15.0';
+			projectConfig.devDependencies['eslint'] = '9.15.0';
+			projectConfig.devDependencies['eslint-plugin-jest'] = '^28.9.0'
+			projectConfig.devDependencies['eslint-plugin-unicorn'] = '^56.0.1';
+			projectConfig.devDependencies['globals"'] = '^15.12.0';
 
 			// Copy ESLint config
 			await fs.copy(templatePath, '.', {overwrite: false});
