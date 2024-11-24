@@ -97,9 +97,9 @@ async function setupFeature(feature, projectConfig) {
 
 			// Copy Rollup and Babel config files
 			await fs.ensureDir('src/js');
-			await fs.copy(`${templatePath}/.babelrc`, '.', {overwrite: false});
-			await fs.copy(`${templatePath}/.rollup.config.js`, '.', {overwrite: false});
-			await fs.copy(`${templatePath}/.main.js`, './src/js', {overwrite: false});
+			await fs.copy(`${templatePath}/.babelrc`, './.babelrc', {overwrite: false});
+			await fs.copy(`${templatePath}/.rollup.config.js`, './.rollup.config.js', {overwrite: false});
+			await fs.copy(`${templatePath}/.main.js`, 'src/js/.main.js', {overwrite: false});
 			break;
 
 		case 'eslint':
