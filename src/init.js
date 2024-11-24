@@ -106,7 +106,7 @@ async function setupFeature(feature, projectConfig) {
 			projectConfig.devDependencies['eslint'] = '9.15.0';
 			projectConfig.devDependencies['eslint-plugin-jest'] = '^28.9.0'
 			projectConfig.devDependencies['eslint-plugin-unicorn'] = '^56.0.1';
-			projectConfig.devDependencies['globals"'] = '^15.12.0';
+			projectConfig.devDependencies['globals'] = '^15.12.0';
 
 			// Copy ESLint config
 			await fs.copy(templatePath, '.', {overwrite: false});
