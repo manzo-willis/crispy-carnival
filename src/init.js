@@ -96,7 +96,10 @@ async function setupFeature(feature, projectConfig) {
 			projectConfig.devDependencies['@babel/preset-env'] = '^7.23.7';
 
 			// Copy Rollup and Babel config files
-			await fs.copy(templatePath, '.', {overwrite: false});
+			await fs.ensureDir('src/js');
+			await fs.copy(`${templatePath}/.babelrc`, '.', {overwrite: false});
+			await fs.copy(`${templatePath}/.rollup.config.js`, '.', {overwrite: false});
+			await fs.copy(`${templatePath}/.main.js`, './src/js', {overwrite: false});
 			break;
 
 		case 'eslint':
