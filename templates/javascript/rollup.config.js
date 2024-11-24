@@ -3,9 +3,9 @@ import commonjs from '@rollup/plugin-commonjs';
 import {nodeResolve} from '@rollup/plugin-node-resolve';
 
 export default {
-	input: 'src/js/main.js',
+	input: 'src/javascript/main.javascript',
 	output: {
-		file: 'dist/js/bundle.js',
+		file: 'dist/javascript/bundle.javascript',
 		format: 'iife',
 		sourcemap: true
 	},

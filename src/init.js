@@ -1,4 +1,5 @@
-import {prompt} from 'enquirer';
+import pkg from 'enquirer';
+const {prompt} = pkg;
 import chalk from 'chalk';
 import ora from 'ora';
 import {execa} from 'execa';
