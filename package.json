@@ -1,6 +1,6 @@
 {
   "name": "@manzo-willis/create-config",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "CLI tool to setup frontend assets pipeline",
   "bin": {
     "create-config": "./bin/cli.js"
