@@ -20,7 +20,8 @@ export async function initializeProject() {
 			choices: [
 				{name: 'sass', message: 'Sass compilation'},
 				{name: 'javascript', message: 'JavaScript build (Rollup + Babel)'},
-				{name: 'eslint', message: 'ESLint configuration'}
+				{name: 'eslint', message: 'ESLint configuration'},
+				{name: 'express', message: 'Express App configuration'}
 			]
 		}
 	]);
@@ -76,8 +77,8 @@ async function setupFeature(feature, projectConfig) {
 
 	switch (feature) {
 		case 'sass':
-			projectConfig.scripts['sass:build'] = 'sass src/styles:dist/css --style compressed';
-			projectConfig.scripts['sass:watch'] = 'sass src/styles:dist/css --watch';
+			projectConfig.scripts['sass:build'] = 'sass src/styles:public/css --style compressed';
+			projectConfig.scripts['sass:watch'] = 'sass src/styles:public/css --watch';
 			projectConfig.devDependencies.sass = '^1.69.7';
 
 			// Create styles directory and copy template files
@@ -110,6 +111,14 @@ async function setupFeature(feature, projectConfig) {
 			projectConfig.devDependencies['eslint-plugin-jest'] = '^28.9.0'
 			projectConfig.devDependencies['eslint-plugin-unicorn'] = '^56.0.1';
 			projectConfig.devDependencies['globals'] = '^15.12.0';
+
+			// Copy ESLint config
+			await fs.copy(templatePath, '.', {overwrite: false});
+			break;
+
+		case 'express':
+			projectConfig.scripts['dev'] = 'node app.js';
+			projectConfig.devDependencies['express'] = '^4.21.1';
 
 			// Copy ESLint config
 			await fs.copy(templatePath, '.', {overwrite: false});

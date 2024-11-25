@@ -5,7 +5,7 @@ import {nodeResolve} from '@rollup/plugin-node-resolve';
 export default {
 	input: 'src/js/main.js',
 	output: {
-		file: 'dist/js/bundle.js',
+		file: 'public/js/bundle.js',
 		format: 'iife',
 		sourcemap: true
 	},
